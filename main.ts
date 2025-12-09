@@ -19,7 +19,7 @@ const CONFIG = {
 
 if (!CONFIG.clientToken || !CONFIG.canvasId) {
   console.error("❌ 请设置环境变量 TEMPO_CLIENT_TOKEN 和 TEMPO_CANVAS_ID");
-  Deno.exit(1);
+  
 }
 
 // ============== 导入 ==============
@@ -1109,3 +1109,4 @@ console.log(`
 `);
 
 Deno.serve({ port: CONFIG.port }, handler);
+
